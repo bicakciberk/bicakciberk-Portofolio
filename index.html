@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hello Everybody, Im Berk Bıçakcı. I have been interested in websites i was child and i started to learn. Now, i learning React for more dynamic and optimise websites and im preparing univerity enterance exam. I want to be Full-Stack Developer in future.
+    "
+    />
+    <meta
+      name="keywords"
+      content="github , frontend , developer , yazılım , portofolio , berk , bıçakcı , bicakciberk , linkedin , computer"
+    />
+    <meta name="author" content="Berk Bıçakcı" />
+
+    <!-- platformlar için -->
+    <meta property="og:title" content="Berk Bıçakcı" />
+    <meta
+      property="og:description"
+      content="Hello Everybody, Im Berk Bıçakcı. I have been interested in websites i was child and i started to learn. Now, i learning React for more dynamic and optimise websites and im preparing univerity enterance exam. I want to be Full-Stack Developer in future.
+      "
+    />
+    <meta property="og:url" content="https://bicakciberk.com.tr" />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Berk Bıçakcı</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      * {
+        outline: none;
+      }
+      .gradiant {
+        background: radial-gradient(
+          49.91% 49.91% at 50% 50.09%,
+          rgba(255, 181, 52, 0.07) 0%,
+          rgba(248, 117, 170, 0) 80%
+        );
+
+        width: 600px;
+        height: 600px;
+
+        transform: translateX(-50%);
+        margin-top: -400px;
+
+        z-index: -10;
+      }
+      .fp-watermark {
+        display: none;
+      }
+      .center {
+        transform: translate(-50%);
+        margin-top: -215px;
+      }
+    </style>
+  </head>
+
+  <body class="m-0 p-0 bg-black box-border text-white">
+    <div id="fullpage" class="px-40px my-40px">
+      <section class="section h-screen relative">
+        <div class="top-left gradiant absolute top-0 left-0"></div>
+        <div class="top flex justify-between">
+          <a href="#">Buy me a coffee</a>
+          <p class="text-orange">Never Give Up</p>
+        </div>
+        <div
+          class="center flex flex-col items-center justify-center absolute top-2/4 left-2/4"
+        >
+          <img
+            src="imgs/WhatsApp Image 2023-09-02 at 17.29.06.webp"
+            class="w-300px h-300px rounded-full object-cover saturate-0 cursor-pointer hover:saturate-100 duration-300"
+            alt=""
+          />
+          <h1 class="text-6xl mt-20px font-normal">
+            Berk <span class="text-orange">Bıçakcı</span>
+          </h1>
+          <h1 class="text-4xl mt-10px font-normal">Front End Developer</h1>
+        </div>
+      </section>
+      <section class="section h-screen">
+        <div class="top-left gradiant absolute top-0 left-0"></div>
+        <div class="top flex justify-between">
+          <p>deneme</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              black: "#0A0A0A",
+              orange: "#FFB534",
+              lightGray: "#DCDCDC",
+            },
+            spacing: {
+              "5px": "5px",
+              "10px": "10px",
+              "20px": "20px",
+              "40px": "40px",
+              "300px": "300px",
+            },
+            maxWidth: {
+              "1/2": "50%",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"
+      integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      new fullpage("#fullpage", {
+        scrollHorizontally: true,
+        licenseKey: "L26KH-G32P9-HHKDJ-Q3J38-SNLWN",
+      });
+    </script>
+  </body>
+</html>
