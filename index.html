@@ -42,7 +42,7 @@
         outline: none;
         font-family: "Montserrat", sans-serif;
       }
-      .gradiant {
+      .gradiant.top {
         background: radial-gradient(
           49.91% 49.91% at 50% 50.09%,
           rgba(255, 181, 52, 0.1) 0%,
@@ -57,8 +57,9 @@
 
         z-index: -10;
       }
+
       @media screen and (max-width: 400px) {
-        .gradiant {
+        .gradiant.top {
           width: 300px;
           height: 300px;
           margin-top: -150px;
@@ -79,11 +80,13 @@
     </style>
   </head>
 
-  <body class="m-0 p-0 bg-black box-border text-white">
+  <body
+    class="m-0 p-0 bg-black box-border text-white selection:bg-orange selection:text-black"
+  >
     <div id="fullpage" class="px-40px 1000px:px-20px">
       <section class="section h-screen relative">
-        <div class="top-left gradiant absolute top-0 left-0"></div>
-        <div class="top flex justify-between pt-40px 1000px:pt-20px">
+        <div class="top gradiant absolute top-0 left-0"></div>
+        <div class="top flex justify-between pt-40px 1000px:pt-20px w-full">
           <a
             href="https://www.buymeacoffee.com/bicakciberk"
             class="duration-300 hover:text-orange 1000px:text-sm"
@@ -95,7 +98,9 @@
           <p
             id="motivation"
             class="text-orange max-w-300px 1000px:text-sm 580px:hidden"
-          ></p>
+          >
+            Never Give Up!
+          </p>
         </div>
         <div
           class="center flex flex-col items-center justify-center absolute top-2/4 left-2/4 w-screen"
@@ -117,7 +122,7 @@
           </h1>
         </div>
         <div
-          class="bottom absolute bottom-0 flex justify-between w-full items-center pb-40px 1000px:pb-20px 580px:pt-20px 580px:top-0 580px:right-0 580px:items-start"
+          class="bottom absolute bottom-0 flex justify-between w-full 580px:w-auto items-center pb-40px 1000px:pb-20px 580px:pt-20px 580px:top-0 580px:right-0 580px:items-start"
         >
           <p
             class="hover:text-orange duration-300 cursor-pointer 1000px:text-sm 580px:hidden"
@@ -156,16 +161,73 @@
           </div>
         </div>
       </section>
-      <section class="section h-screen">
+      <section
+        class="section relative h-screen flex items-center overflow-hidden"
+      >
+        <div class="flex flex-col">
+          <h2 class="text-orange text-3xl 1000px:text-2xl 615px:text-xl">
+            Who Am I ?
+          </h2>
+          <p
+            class="text-lg mt-20px 1000px:text-base 615px:text-sm 615px:mt-10px"
+          >
+            Hey there, I'm Berk Bıçakcı, a passionate front-end developer on a
+            journey to craft immersive digital experiences. From a young age,
+            I've been captivated by the world of websites, sparking a curiosity
+            that led me to dive deep into HTML, CSS, and JavaScript.
+          </p>
+          <p
+            class="text-lg mt-20px 1000px:text-base 615px:text-sm 615px:mt-10px"
+          >
+            My fascination with creating visually stunning and seamlessly
+            functional web solutions pushed me to explore React and its dynamic
+            capabilities. With each line of code, I aim to optimize user
+            experiences, employing technologies like Tailwind to refine the art
+            of interface design.
+          </p>
+          <p
+            class="text-lg mt-20px 1000px:text-base 615px:text-sm 615px:mt-10px 615px:hidden"
+          >
+            Beyond the screen, I find joy in gaming, losing myself in virtual
+            realms that often inspire my creative approach to development. When
+            I'm not coding or gaming, you'll likely find me swimming, finding
+            solace in the rhythmic flow that mirrors my approach to
+            problem-solving in coding.
+          </p>
+          <p
+            class="text-lg mt-20px 1000px:text-base 615px:text-sm 615px:mt-10px"
+          >
+            Currently, I'm preparing for university entrance exams, driven by a
+            desire to expand my knowledge and skills further. My ultimate goal?
+            To evolve into a versatile Full-Stack Developer, merging the
+            front-end finesse I cherish with a holistic understanding of
+            back-end technologies.
+          </p>
+          <p
+            class="text-lg mt-20px 1000px:text-base 615px:text-sm 615px:mt-10px"
+          >
+            Join me on this exhilarating journey as I blend creativity,
+            innovation, and technology to shape the digital landscapes of
+            tomorrow.
+          </p>
+        </div>
+      </section>
+      <section class="section three h-screen">
         <div class="top-left gradiant absolute top-0 left-0"></div>
         <div class="top flex justify-between">
-          <p>deneme</p>
+          <p>deneme 2</p>
         </div>
       </section>
       <section class="section h-screen">
         <div class="top-left gradiant absolute top-0 left-0"></div>
         <div class="top flex justify-between">
-          <p>deneme 2</p>
+          <p>deneme 3</p>
+        </div>
+      </section>
+      <section class="section h-screen">
+        <div class="top-left gradiant absolute top-0 left-0"></div>
+        <div class="top flex justify-between">
+          <p>deneme 4</p>
         </div>
       </section>
     </div>
@@ -197,6 +259,7 @@
           },
           screens: {
             "1000px": { max: "1000px" },
+            "615px": { max: "615px" },
             "580px": { max: "580px" },
           },
         },
