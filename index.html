@@ -40,7 +40,7 @@
       .gradiant {
         background: radial-gradient(
           49.91% 49.91% at 50% 50.09%,
-          rgba(255, 181, 52, 0.07) 0%,
+          rgba(255, 181, 52, 0.1) 0%,
           rgba(248, 117, 170, 0) 80%
         );
 
@@ -56,19 +56,25 @@
         display: none;
       }
       .center {
-        transform: translate(-50%);
-        margin-top: -215px;
+        transform: translate(-50%, -50%);
       }
     </style>
   </head>
 
   <body class="m-0 p-0 bg-black box-border text-white">
-    <div id="fullpage" class="px-40px my-40px">
+    <div id="fullpage" class="px-40px">
       <section class="section h-screen relative">
         <div class="top-left gradiant absolute top-0 left-0"></div>
-        <div class="top flex justify-between">
-          <a href="#">Buy me a coffee</a>
-          <p class="text-orange">Never Give Up</p>
+        <div class="top flex justify-between pt-40px">
+          <a
+            href="https://www.buymeacoffee.com/bicakciberk"
+            class="duration-300 hover:text-orange"
+            target="_blank"
+          >
+            Buy me a coffee
+          </a>
+
+          <p id="motivation" class="text-orange max-w-300px"></p>
         </div>
         <div
           class="center flex flex-col items-center justify-center absolute top-2/4 left-2/4"
@@ -82,6 +88,43 @@
             Berk <span class="text-orange">Bıçakcı</span>
           </h1>
           <h1 class="text-3xl mt-10px font-normal">Front End Developer</h1>
+        </div>
+        <div
+          class="bottom absolute bottom-0 flex justify-between items-center pb-40px w-full"
+        >
+          <p class="hover:text-orange duration-300 cursor-pointer">
+            bicakciberk.com@gmail.com
+          </p>
+          <div class="cards flex items-center">
+            <a
+              href="https://www.linkedin.com/in/bicakciberk"
+              target="_blank"
+              class="cursor-pointer hover:text-orange duration-300"
+            >
+              <i class="fa-brands fa-linkedin fa-lg"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/bicakciberk/"
+              target="_blank"
+              class="cursor-pointer hover:text-orange duration-300"
+            >
+              <i class="fa-brands fa-instagram fa-lg ml-10px"></i>
+            </a>
+            <a
+              href="https://github.com/bicakciberk"
+              target="_blank"
+              class="cursor-pointer hover:text-orange duration-300"
+            >
+              <i class="fa-brands fa-github fa-lg ml-10px"></i>
+            </a>
+            <a
+              href="https://twitter.com/bicakciberkdev"
+              target="_blank"
+              class="cursor-pointer hover:text-orange duration-300"
+            >
+              <i class="fa-brands fa-twitter fa-lg ml-10px"></i>
+            </a>
+          </div>
         </div>
       </section>
       <section class="section h-screen">
@@ -117,7 +160,7 @@
               "300px": "300px",
             },
             maxWidth: {
-              "1/2": "50%",
+              "300px": "300px",
             },
           },
         },
