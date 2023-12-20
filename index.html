@@ -30,6 +30,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="imgs/shortcuticon-dark.png"
+      type="image/x-icon"
+    />
     <title>Berk Bıçakcı</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -52,6 +57,19 @@
 
         z-index: -10;
       }
+      @media screen and (max-width: 400px) {
+        .gradiant {
+          width: 300px;
+          height: 300px;
+          margin-top: -150px;
+          background: radial-gradient(
+            49.91% 49.91% at 50% 50.09%,
+            rgba(255, 181, 52, 0.05) 0%,
+            rgba(248, 117, 170, 0) 80%
+          );
+        }
+      }
+
       .fp-watermark {
         display: none;
       }
@@ -62,37 +80,48 @@
   </head>
 
   <body class="m-0 p-0 bg-black box-border text-white">
-    <div id="fullpage" class="px-40px">
+    <div id="fullpage" class="px-40px 1000px:px-20px">
       <section class="section h-screen relative">
         <div class="top-left gradiant absolute top-0 left-0"></div>
-        <div class="top flex justify-between pt-40px">
+        <div class="top flex justify-between pt-40px 1000px:pt-20px">
           <a
             href="https://www.buymeacoffee.com/bicakciberk"
-            class="duration-300 hover:text-orange"
+            class="duration-300 hover:text-orange 1000px:text-sm"
             target="_blank"
           >
             Buy me a coffee
           </a>
 
-          <p id="motivation" class="text-orange max-w-300px"></p>
+          <p
+            id="motivation"
+            class="text-orange max-w-300px 1000px:text-sm 580px:hidden"
+          ></p>
         </div>
         <div
-          class="center flex flex-col items-center justify-center absolute top-2/4 left-2/4"
+          class="center flex flex-col items-center justify-center absolute top-2/4 left-2/4 w-screen"
         >
           <img
             src="imgs/WhatsApp Image 2023-09-02 at 17.29.06.webp"
-            class="w-300px h-300px rounded-full object-cover saturate-0 cursor-pointer hover:saturate-100 duration-300"
+            class="w-300px h-300px 1000px:w-200px 1000px:h-200px 580px:h-150px 580px:w-150px rounded-full object-cover saturate-0 cursor-pointer hover:saturate-100 duration-300"
             alt=""
           />
-          <h1 class="text-5xl mt-20px font-normal">
+          <h1
+            class="text-5xl mt-20px 1000px:mt-10px font-normal 1000px:text-4xl 580px:text-2xl 580px:mt-5px"
+          >
             Berk <span class="text-orange">Bıçakcı</span>
           </h1>
-          <h1 class="text-3xl mt-10px font-normal">Front End Developer</h1>
+          <h1
+            class="text-3xl mt-10px 1000px:mt-5px font-normal 1000px:text-2xl 580px:text-lg 580px:mt-0"
+          >
+            Front End Developer
+          </h1>
         </div>
         <div
-          class="bottom absolute bottom-0 flex justify-between items-center pb-40px w-full"
+          class="bottom absolute bottom-0 flex justify-between w-full items-center pb-40px 1000px:pb-20px 580px:pt-20px 580px:top-0 580px:right-0 580px:items-start"
         >
-          <p class="hover:text-orange duration-300 cursor-pointer">
+          <p
+            class="hover:text-orange duration-300 cursor-pointer 1000px:text-sm 580px:hidden"
+          >
             bicakciberk.com@gmail.com
           </p>
           <div class="cards flex items-center">
@@ -157,11 +186,18 @@
               "10px": "10px",
               "20px": "20px",
               "40px": "40px",
+              "150px": "150px",
+
+              "200px": "200px",
               "300px": "300px",
             },
             maxWidth: {
               "300px": "300px",
             },
+          },
+          screens: {
+            "1000px": { max: "1000px" },
+            "580px": { max: "580px" },
           },
         },
       };
