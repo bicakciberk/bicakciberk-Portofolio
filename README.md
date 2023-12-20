@@ -11,3 +11,6 @@ Note: This site is under construction.
 - TailwindCSS
 - FontAwesome
 - FullPageJS
+
+### Font
+- Montserrat (with Google Fonts)
