@@ -82,7 +82,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100vh;
       }
+
       .form input,
       .form textarea {
         border: 1px solid #fefefe;
@@ -333,7 +335,7 @@
         >
           Email is sended
         </div>
-        <div class="left px-40px 1000px:px-20px w-2/4">
+        <div class="left px-40px 1000px:px-20px w-2/4 1000px:w-full">
           <h2 class="text-orange text-3xl 1000px:text-2xl 615px:text-xl">
             Let's Talk About for Your Project
             <form id="form" action="javascript:main()" class="w-full">
@@ -341,28 +343,37 @@
                 id="name"
                 placeholder="Name-Surname"
                 type="text"
-                class="p-10px bg-black mt-20px text-base w-full"
+                class="p-10px bg-black mt-20px text-base w-full 1000px:text-sm"
               />
-              <p class="mt-5px text-orange text-sm" id="nameError"></p>
+              <p
+                class="mt-5px text-orange text-sm 1000px:text-xs"
+                id="nameError"
+              ></p>
 
               <input
                 id="email"
                 placeholder="Email"
                 type="text"
-                class="mt-10px p-10px bg-black text-base w-full"
+                class="mt-10px p-10px bg-black text-base w-full 1000px:text-sm"
               />
-              <p class="mt-5px text-orange text-sm" id="emailError"></p>
+              <p
+                class="mt-5px text-orange text-sm 1000px:text-xs"
+                id="emailError"
+              ></p>
               <textarea
                 id="message"
                 placeholder="Message"
-                class="mt-10px p-10px bg-black text-base w-full"
+                class="mt-10px p-10px bg-black text-base w-full 1000px:text-sm"
                 rows="8"
                 type="text"
               ></textarea>
-              <p class="mt-5px text-orange text-sm" id="messageError"></p>
+              <p
+                class="mt-5px text-orange text-sm 1000px:text-xs"
+                id="messageError"
+              ></p>
               <button
                 type="submit"
-                class="mt-10px bg-orange p-10px text-black font-medium hover:bg-hoverOrange duration-300 text-base w-full"
+                class="mt-10px bg-orange p-10px text-black font-medium hover:bg-hoverOrange duration-300 text-base w-full 1000px:text-sm"
                 id="submitBtn"
               >
                 Submit
@@ -370,17 +381,15 @@
             </form>
           </h2>
         </div>
-        <div class="right h-screen w-2/4">
+        <div class="right h-screen w-2/4 1000px:hidden">
           <img
             src="imgs/image 1.webp"
-            class="object-cover saturate-0 hover:saturate-100 duration-300"
+            class="object-cover saturate-0 hover:saturate-100 duration-300 h-full"
             alt=""
           />
         </div>
       </section>
-      <section class="section h-screen">
-        <p>deneme2</p>
-      </section>
+      <section class="section h-screen"></section>
     </div>
 
     <script src="app.js"></script>
