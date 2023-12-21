@@ -45,7 +45,7 @@
       .gradiant.top {
         background: radial-gradient(
           49.91% 49.91% at 50% 50.09%,
-          rgba(255, 181, 52, 0.1) 0%,
+          rgba(255, 181, 52, 0.2) 0%,
           rgba(248, 117, 170, 0) 80%
         );
 
@@ -58,6 +58,10 @@
         z-index: -10;
       }
 
+      .card h2 {
+        border-bottom: 1px solid #fefefe;
+      }
+
       @media screen and (max-width: 400px) {
         .gradiant.top {
           width: 300px;
@@ -65,7 +69,7 @@
           margin-top: -150px;
           background: radial-gradient(
             49.91% 49.91% at 50% 50.09%,
-            rgba(255, 181, 52, 0.05) 0%,
+            rgba(255, 181, 52, 0) 0%,
             rgba(248, 117, 170, 0) 80%
           );
         }
@@ -74,8 +78,26 @@
       .fp-watermark {
         display: none;
       }
+      .form .fp-overflow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .form input,
+      .form textarea {
+        border: 1px solid #fefefe;
+      }
+
+      .form input:focus,
+      .form textarea:focus {
+        border: 1px solid #ffb534;
+      }
+
       .center {
         transform: translate(-50%, -50%);
+      }
+      .successEmail {
+        z-index: 30;
       }
     </style>
   </head>
@@ -83,8 +105,8 @@
   <body
     class="m-0 p-0 bg-black box-border text-white selection:bg-orange selection:text-black"
   >
-    <div id="fullpage" class="px-40px 1000px:px-20px">
-      <section class="section h-screen relative">
+    <div id="fullpage">
+      <section class="section h-screen relative px-40px 1000px:px-20px">
         <div class="top gradiant absolute top-0 left-0"></div>
         <div class="top flex justify-between pt-40px 1000px:pt-20px w-full">
           <a
@@ -129,7 +151,9 @@
           >
             bicakciberk.com@gmail.com
           </p>
-          <div class="cards flex items-center">
+          <div
+            class="cards flex items-center pr-80px 1000px:pr-40px 580px:pr-20px"
+          >
             <a
               href="https://www.linkedin.com/in/bicakciberk"
               target="_blank"
@@ -162,7 +186,7 @@
         </div>
       </section>
       <section
-        class="section relative h-screen flex items-center overflow-hidden"
+        class="section relative h-screen flex items-center overflow-hidden px-40px 1000px:px-20px"
       >
         <div class="flex flex-col">
           <h2 class="text-orange text-3xl 1000px:text-2xl 615px:text-xl">
@@ -212,27 +236,155 @@
           </p>
         </div>
       </section>
-      <section class="section three h-screen">
-        <div class="top-left gradiant absolute top-0 left-0"></div>
-        <div class="top flex justify-between">
-          <p>deneme 2</p>
+      <section
+        class="section flex flex-col justify-center h-screen techs px-40px 1000px:px-20px"
+      >
+        <div class="top w-full">
+          <h2 class="text-orange text-3xl 1000px:text-2xl 615px:text-xl">
+            Technologies
+          </h2>
+        </div>
+        <div
+          class="cards flex flex-wrap justify-between items-start w-full mt-20px"
+        >
+          <div class="card flex flex-col">
+            <h2 class="pb-5px text-2xl 1000px:text-lg 615px:text-base">
+              Programming
+            </h2>
+            <a
+              href="https://html.com/"
+              target="_blank"
+              class="mt-5px text-lg cursor-pointer hover:text-orange duration-300 1000px:text-base 615px:text-sm"
+            >
+              HTML
+            </a>
+            <a
+              href="https://www.w3schools.com/css/"
+              target="_blank"
+              class="text-lg cursor-pointer hover:text-orange duration-300 1000px:text-base 615px:text-sm"
+            >
+              CSS
+            </a>
+            <a
+              href="https://www.javascript.com/"
+              target="_blank"
+              class="text-lg cursor-pointer hover:text-orange duration-300 1000px:text-base 615px:text-sm"
+            >
+              Javascript
+            </a>
+          </div>
+          <div class="card ml-7px flex flex-col">
+            <h2 class="pb-5px text-2xl 1000px:text-lg 615px:text-base">
+              Framework
+            </h2>
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              class="mt-5px text-lg cursor-pointer hover:text-orange duration-300 1000px:text-base 615px:text-sm"
+            >
+              TailwindCSS
+            </a>
+            <a
+              href="https://react.dev/"
+              target="_blank"
+              class="text-lg cursor-pointer hover:text-orange duration-300 1000px:text-base 615px:text-sm"
+            >
+              React
+            </a>
+          </div>
+          <div class="card ml-7px flex flex-col">
+            <h2 class="pb-5px text-2xl 1000px:text-lg 615px:text-base">
+              Design
+            </h2>
+            <a
+              href="https://www.figma.com/"
+              target="_blank"
+              class="mt-5px text-lg cursor-pointer hover:text-orange duration-300 1000px:text-base 615px:text-sm"
+            >
+              Figma
+            </a>
+          </div>
+          <div
+            class="card flex flex-col ml-7px 389px:ml-0 389px:w-113px 389px:mt-10px"
+          >
+            <h2 class="pb-5px text-2xl 1000px:text-lg 615px:text-base">
+              Deploy
+            </h2>
+            <a
+              href="https://www.netlify.com/"
+              target="_blank"
+              class="mt-5px text-lg cursor-pointer hover:text-orange duration-300 1000px:text-base 615px:text-sm"
+            >
+              Netlify
+            </a>
+            <a
+              href="https://vercel.com/"
+              target="_blank"
+              class="text-lg cursor-pointer hover:text-orange duration-300 1000px:text-base 615px:text-sm"
+            >
+              Vercel
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section relative form h-screen">
+        <div
+          class="successEmail w-screen bg-orange text-black p-10px absolute top-0 right-0 text-center font-medium hidden"
+        >
+          Email is sended
+        </div>
+        <div class="left px-40px 1000px:px-20px w-2/4">
+          <h2 class="text-orange text-3xl 1000px:text-2xl 615px:text-xl">
+            Let's Talk About for Your Project
+            <form id="form" action="javascript:main()" class="w-full">
+              <input
+                id="name"
+                placeholder="Name-Surname"
+                type="text"
+                class="p-10px bg-black mt-20px text-base w-full"
+              />
+              <p class="mt-5px text-orange text-sm" id="nameError"></p>
+
+              <input
+                id="email"
+                placeholder="Email"
+                type="text"
+                class="mt-10px p-10px bg-black text-base w-full"
+              />
+              <p class="mt-5px text-orange text-sm" id="emailError"></p>
+              <textarea
+                id="message"
+                placeholder="Message"
+                class="mt-10px p-10px bg-black text-base w-full"
+                rows="8"
+                type="text"
+              ></textarea>
+              <p class="mt-5px text-orange text-sm" id="messageError"></p>
+              <button
+                type="submit"
+                class="mt-10px bg-orange p-10px text-black font-medium hover:bg-hoverOrange duration-300 text-base w-full"
+                id="submitBtn"
+              >
+                Submit
+              </button>
+            </form>
+          </h2>
+        </div>
+        <div class="right h-screen w-2/4">
+          <img
+            src="imgs/image 1.webp"
+            class="object-cover saturate-0 hover:saturate-100 duration-300"
+            alt=""
+          />
         </div>
       </section>
       <section class="section h-screen">
-        <div class="top-left gradiant absolute top-0 left-0"></div>
-        <div class="top flex justify-between">
-          <p>deneme 3</p>
-        </div>
-      </section>
-      <section class="section h-screen">
-        <div class="top-left gradiant absolute top-0 left-0"></div>
-        <div class="top flex justify-between">
-          <p>deneme 4</p>
-        </div>
+        <p>deneme2</p>
       </section>
     </div>
 
     <script src="app.js"></script>
+    <script src="mail.js"></script>
 
     <script>
       tailwind.config = {
@@ -242,12 +394,19 @@
               black: "#0A0A0A",
               orange: "#FFB534",
               lightGray: "#DCDCDC",
+              hoverOrange: "#996d1f",
             },
             spacing: {
               "5px": "5px",
+              "7px": "7px",
               "10px": "10px",
               "20px": "20px",
               "40px": "40px",
+              "60px": "60px",
+              "80px": "80px",
+
+              "113px": "113px",
+
               "150px": "150px",
 
               "200px": "200px",
@@ -261,6 +420,7 @@
             "1000px": { max: "1000px" },
             "615px": { max: "615px" },
             "580px": { max: "580px" },
+            "389px": { max: "389px" },
           },
         },
       };

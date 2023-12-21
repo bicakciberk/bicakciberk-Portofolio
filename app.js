@@ -16,10 +16,7 @@ const motivationQuote = [
       id: 4,
       header: "'Just keep swimming.'",
     },
-    {
-      id: 5,
-      header: "'Success is falling nine times and getting up ten.'",
-    },
+
     {
       id: 6,
       header: "'Be the change that you wish to see in the world.'",
